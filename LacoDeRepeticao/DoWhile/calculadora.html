@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let condicao, operador, n1, n2;
+
+        do {
+            condicao = prompt("Digite S para iniciar a calculadora ou N para sair:");
+
+            do {
+                operador = prompt("Digite um operador matemático válido:" +
+                    "\n + para adição" +
+                    "\n - para subtração" +
+                    "\n * para multiplicação" +
+                    "\n / para divisão" +
+                    "\n % para resto da divisão");
+            } while (!(operador === "+" || operador === "-" || operador === "*" || operador === "/" || operador === "%"));
+
+            n1 = parseFloat(prompt("Digite o primeiro número:"));
+            n2 = parseFloat(prompt("Digite o segundo número:"));
+
+            do {
+                if (operador === "+") {
+                    alert(n1 + n2);
+                    break;
+                }
+            } while (operador !== "+");
+
+            do {
+                if (operador === "-") {
+                    alert(n1 - n2);
+                    break;
+                }
+            } while (operador !== "-");
+
+            do {
+                if (operador === "*") {
+                    alert(n1 * n2);
+                    break;
+                }
+            } while (operador !== "*");
+
+            do {
+                if (operador === "/") {
+                    alert(n2 !== 0 ? n1 / n2 : "Erro: divisão por zero!");
+                    break;
+                }
+            } while (operador !== "/");
+
+            do {
+                if (operador === "%") {
+                    alert(n1 % n2);
+
+                }
+            } while (operador !== "%");
+            
+            condicao = prompt("Deseja realizar outra operação? Digite S para sim ou N para não:");
+        } while (condicao == "S" || condicao == "s");
+
+
+        alert("Calculadora encerrada.");
+    </script>
+</body>
+
+</html>

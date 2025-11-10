@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(241, 229, 206);
+  margin: 0;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  
+}
+.requisitos {
+  background-color: #fff;
+  border: 2px solid rgb(160, 151, 151);
+  margin: 20px auto;
+  padding: 30px;
+  width: 70%;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-radius: 5px;
+}
+.requisitos h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+.requisitos ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+.requisitos ul li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.requisitos ul li::before {
+  position: absolute;
+  left: 0;
+}
+.final-note {
+  margin-top: 20px;
+  font-style: italic;
+  text-align: center;
+  color: #666;
+}
+.requisitos,
+.diferenciais,
+.ambiente,
+.processo,
+.call-to-action {
+  background-color: #fff;
+  border: 2px solid red;
+  margin: 20px auto;
+  padding: 30px;
+  width: 70%;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-radius: 5px;
+}
+
+.requisitos h2,
+.diferenciais h2,
+.ambiente h2,
+.processo h2,
+.call-to-action h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.requisitos ul,
+.diferenciais ul,
+.ambiente ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.requisitos ul li,
+.diferenciais ul li,
+.ambiente ul li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.requisitos ul li::before,
+.diferenciais ul li::before,
+.ambiente ul li::before {
+  position: absolute;
+  left: 0;
+}
+
+.processo ol {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.call-to-action {
+  text-align: center;
+}
+
+.btn-candidatar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-candidatar:hover {
+  background-color: darkred;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tabuada, i, condicao;
+        condicao = prompt("Digite S para iniciar a tabuada: ")
+
+        do {
+            tabuada = parseInt(prompt("Digite o número que desejar visualizar a tabuada: "))
+            i = 0;
+
+            do {
+                i++;
+                alert(tabuada + " X " + i + "=" + (tabuada * i))
+            } while (i < 9);
+            condicao = prompt("Deseja realizar outra operação? Digite S para sim ou N para não:");
+        } while (condicao == "S" || condicao == "s");
+
+        alert("Programa encerrado")
+    </script>
+</body>
+
+</html>

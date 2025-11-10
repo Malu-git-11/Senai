@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <script>
+        let termos, a, b, i, resultado, proximo;
+        termos = parseInt(prompt("Quantos números da sequência de Fibonacci você deseja ver?"));
+        a = 0;
+        b = 1;
+        resultado = "Sequência de Fibonacci:\n";
+
+        for (i = 0; i < termos; i++) {
+            resultado += a + "";
+
+            proximo = a + b;
+            a = b;
+            b = proximo;
+
+            alert(resultado);
+
+        }
+    </script>
+</body>
+
+</html>

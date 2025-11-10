@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    color: black;;
+    font-size: large;
+    font-weight: bold;
+    height: 700px;
+}
+header{
+    box-sizing: border-box;
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: lightblue;
+}
+nav button{
+    box-sizing: border-box;
+    display: inline;
+    border: solid white 2px;
+    border-radius: 40%;
+    gap: 10px;
+}
+nav button:hover{
+    background-color: tomato;
+    color: white;
+    
+}
+main{
+    box-sizing: border-box;
+    border: solid black 2px;
+    height: 580px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section p{
+    width: 40%;
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+}
+main section{
+    box-sizing: border-box;
+    border: solid black 2px;
+    margin-top: 5px;
+    height: 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    background-image: url(./girl.and.boy.jpg),  url(./cat.jpg);
+    background-position: right center, left center;
+    min-height: auto;
+    background-size: 400px, 400px;
+}
+footer{ 
+    box-sizing: border-box;
+    border: solid black 2px;
+    height: 50px;
+    margin-top: 100px;
+    margin: 0px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

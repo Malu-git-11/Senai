@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+</head>
+
+<body>
+    <script>
+        //Nosso programa deve dar acesso apenas a pessoas maiores de 
+        // idade para assistir o filme classificado como 18 anos.
+        let anoNascimento, anoAtual, idade, acompanhante;
+
+        anoNascimento = parseInt(prompt("Digite seu ano de nascimento:"));
+        anoAtual = new Date().getFullYear();
+        idade = anoAtual - anoNascimento;
+        acompanhante = prompt("Digite sim ou não em caso de estar acompanhado de alguém maior de idade");
+
+        if (idade >= 18) {
+            alert("Você tem " + idade + " anos. Você pode assistir ao filme.");
+        } else if(acompanhante == "sim" || "Sim" || "SIM") {
+            alert("Você tem " +idade+ ", porém está acompanhado, então pode assistir.");
+        } else {
+            alert("Você tem " + idade + " anos. Você não pode assistir ao filme.");
+        }
+
+        
+
+
+    </script>
+</body>
+
+</html>
