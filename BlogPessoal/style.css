@@ -1,0 +1,90 @@
+/*estilizando o index*/
+
+body {
+            display: block;
+            background: linear-gradient(to right, plum, lavender);
+            
+}
+
+        button {
+            border-radius: 20px;
+            width: 80px;
+            height: 50px;
+            font-family: "Story Script", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        img {
+            border: solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-self: center;
+            border-width: 5px;
+            width: 200px;
+        }
+        header{
+            display: flexbox;
+            border: solid black 2px;
+            margin: auto;
+            padding: auto;
+        }
+
+        main button{
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        main{
+            text-align: center;
+            font-size: 20px;
+            color: grey;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            border: solid black 2px;
+        }
+        .first, .second{
+            display: inline-block;
+            margin: 10px 50px;
+        }
+       
+
+        footer{
+            text-align: center;
+            font-size: 14px;
+            color: black;
+            margin-top: 20px;
+            border: solid black 2px;
+        }
+
+        h1,
+        h2 {
+            font-family: "Story Script", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rebeccapurple;
+            text-align: center;
+            text-shadow: 10px 10px 10px plum;
+
+        }            
+
+        /*estilizando o formulario*/
+        #formulario{
+            background-image: url(./wallpaper.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        #box_form{
+            border: solid black;
+            padding: auto;
+            margin: auto;   
+        }
+
+        .container{
+            background: linear-gradient(to right, plum, lavender);
+            color: black;
+            text-align: center;
+            
+        }

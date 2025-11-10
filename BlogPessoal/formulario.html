@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale comigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="formulario">
+    <div>
+        <form action="">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <input type="submit" value="Enviar">
+            <br>
+
+            <label for="mensagem">Mensagem:</label>
+            <br>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <br>
+            <label for="opcoes">Qual o motivo do seu contato:</label>
+            <br>
+            <select name="opcoes" id="opcoes">
+                <option value="opcoes1">Contratar seu contato</option>
+                <option value="opcoes2">Pedir orçamento</option>
+                <option value="opcoes3">Dúvidas</option>
+            </select>
+            <br>
+            <label for="concordo">Ao aceitar você concorda em manter contato</label>
+            <br>
+
+            <input type="checkbox" id="concordo" name="concordo">
+            <br>
+            <label for="genero">Genero:</label>
+
+            <br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="genero_feminino" value="feminino">
+            <br>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="genero_masculino" value="masculino">
+            <br>
+
+            <label for="nao_se_identifica">Não se identifica</label>
+            <input type="radio" name="genero" id="genero_nulo" value="não se identifica">
+            <br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+        <br>
+
+        <table border="1">
+            <tr>
+                <th>IDE</th>
+                <th>Linguagem</th>
+                <th>Framework</th>
+            </tr>
+            <tr>
+                <td>VSCode</td>
+                <td align="center">Python</td>
+                <td>Flask</td>
+            </tr>
+            <tr>
+                <td>IntelliJ</td>
+                <td align="center">Java</td>
+                <td>Springboot</td>
+            </tr>
+            <tr>
+                <td>VSCode</td>
+                <td align="center">TypeScript</td>
+                <td>Angular</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <a href="./index.html"><button>Voltar</button></a>
+</body>
+
+</html>
