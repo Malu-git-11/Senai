@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nota, notaInt, resultado;
+        nota = parseFloat(prompt("Digite a nota: "));
+        notaInt = Math.round(nota);
+
+        resultado;
+        switch (true) {
+            case (notaInt >= 9 && notaInt <= 10):
+                resultado = "Excelente";
+
+                break;
+            case (notaInt >= 7 && notaInt <= 8.9):
+                resultado = "Bom";
+                break;
+            case (notaInt >= 5 && notaInt <= 6.9):
+                resultado = "Regular";
+                break;
+            case (notaInt >= 0 && notaInt <= 4.9):
+                resultado = "Insuficiente";
+                break;
+            default:
+                resultado = "Nota inválida";
+                break;
+        }
+
+        alert("Sua nota foi: " + nota + " - " + resultado);
+    </script>
+</body>
+
+</html>

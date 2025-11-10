@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let cod;
+        cod = parseInt(prompt("Digite o código do prato (1-5): "))
+
+        switch (cod) {
+            case 1:
+                alert("Prato: Pizza Margherita \n Valor: R$35,00 \n Tempo de preparo: 20min \n Descrição: Pizza clássica com tomate e manjericão.");
+                break;
+            case 2:
+                alert("Prato: Lasanha  \n Valor: R$28,00 \n Tempo de preparo: 25min \n Descrição: Camadas de massa com molho a bolonhesa.")
+                break;
+            case 3:
+                alert("Prato: Salada Caesar \n Valor: R$22,00 \n Tempo de preaparo: 10min \n Descrição: Salada com alface, croutons e molho especial.")
+                break;
+            case 4:
+                alert("Prato: Hambúrguer \n Valor: R$18,00 \n Tempo de preparo: 15min \n Descrição: Pão artesanal, carne, molho alface, tomate e queijo.")
+                break;
+            case 5:
+                alert("Prato: Sopa do dia \n Valor: R$15,00 \n Tempo de preparo: 8min \n Descrição: Sopa especial do chefe.")
+                break;
+            default:
+                alert("Código inválido. \n Tente novamente.");
+        }
+        alert(prato)
+    </script>
+</body>
+
+</html>

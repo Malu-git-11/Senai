@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tipo, renda, score, resultado, motivo;
+        tipo = parseInt(prompt("Digite o tipo de cliente: \n 1. VIP \n 2. Regular \n 3. Novo \n 4. Especial. "))
+        renda = parseFloat(prompt("Digite a renda mensal: "))
+        score = parseInt(prompt("Digite o score do cliente: "))
+
+        switch (tipo) {
+            case 1: 
+                resultado = "APROVADO";
+                motivo = "Cliente VIP aprovado automaticamente.";
+                break;
+
+            case 2: 
+                if (score < 300) {
+                    resultado = "RECUSADO";
+                    motivo = "Score abaixo de 300.";
+                } else if (renda < 1000) {
+                    resultado = "RECUSADO";
+                    motivo = "Renda abaixo de R$1000.";
+                } else if (renda >= 2000 && score >= 600) {
+                    resultado = "APROVADO";
+                    motivo = "Renda e score atendem aos critérios.";
+                } else {
+                    resultado = "RECUSADO";
+                    motivo = "Não atende aos requisitos de renda ≥ R$2000 e score ≥ 600.";
+                }
+                break;
+
+            case 3: 
+                if (score < 300) {
+                    resultado = "RECUSADO";
+                    motivo = "Score abaixo de 300.";
+                } else if (renda < 1000) {
+                    resultado = "RECUSADO";
+                    motivo = "Renda abaixo de R$1000.";
+                } else if (renda >= 3000 && score >= 700) {
+                    resultado = "APROVADO";
+                    motivo = "Renda e score atendem aos critérios.";
+                } else {
+                    resultado = "RECUSADO";
+                    motivo = "Não atende aos requisitos de renda ≥ R$3000 e score ≥ 700.";
+                }
+                break;
+
+            case 4: 
+                if (score < 300) {
+                    resultado = "RECUSADO";
+                    motivo = "Score abaixo de 300.";
+                } else if (renda < 1000) {
+                    resultado = "RECUSADO";
+                    motivo = "Renda abaixo de R$1000.";
+                } else {
+                    resultado = "ANÁLISE NECESSÁRIA";
+                    if (renda > 5000 || score > 800) {
+                        motivo = "Cliente será avaliado em Análise Prioritária.";
+                    } else {
+                        motivo = "Cliente será avaliado em Análise Comum.";
+                    }
+                }
+                break;
+
+            default:
+                resultado = "INVÁLIDO";
+                motivo = "Tipo de cliente não reconhecido.";
+        }
+
+        alert("Resultado: " + resultado + "\nMotivo: " + motivo);
+    </script>
+</body>
+
+</html>
